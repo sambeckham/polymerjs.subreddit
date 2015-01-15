@@ -12,3 +12,4 @@ build:
  - 'clean:resources'
  - 'sass:dist'
  - 'imagemin'
+ - 'replace:imageReferences'
