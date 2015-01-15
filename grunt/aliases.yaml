@@ -2,8 +2,13 @@ default:
  - 'serve'
 
 serve:
- - 'clean'
+ - 'clean:server'
  - 'copy'
- - 'sass'
+ - 'sass:dev'
  - 'connect'
  - 'watch'
+
+build:
+ - 'clean:resources'
+ - 'sass:dist'
+ - 'imagemin'

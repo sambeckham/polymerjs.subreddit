@@ -1,11 +1,20 @@
 module.exports = {
-    dev: {
+    pages: {
         files: [{
             expand: true,
             dot: true,
             cwd: 'app',
             dest: '.tmp',
-            src: ['**/*.{js,css,png,jpg,jpeg,gif,svg,html}']
+            src: '*.html'
+        }]
+    },
+    images: {
+        files: [{
+            expand: true,
+            dot: true,
+            cwd: 'app/images',
+            dest: '.tmp/images',
+            src: '*.{png,jpg}'
         }]
     }
 };
