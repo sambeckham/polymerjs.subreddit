@@ -1,0 +1,9 @@
+default:
+ - 'serve'
+
+serve:
+ - 'clean'
+ - 'copy'
+ - 'sass'
+ - 'connect'
+ - 'watch'
