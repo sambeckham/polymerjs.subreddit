@@ -3,7 +3,7 @@ module.exports = {
         src: 'resources/custom-styles.css',
         overwrite: true,
         replacements: [{
-            from: /['"]\/images\/([^\.]*)([^'"]*)['"]/,
+            from: /['"]\/images\/([^\.]*)([^'"]*)['"]/g,
             to: '%%$1%%'
         }]
     }
