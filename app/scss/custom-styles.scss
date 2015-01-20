@@ -1,20 +1,12 @@
-.redditname {
-    a {
-        content: '';
-        font-size: 0;
+@import 'base/variables';
+@import 'base/color-scheme';
+@import 'base/grid';
 
-        &:before {
-            content: 'polymer.js';
-            font-size: 19px;
-        }
-    }
+@import 'global/base.scss';
 
-    &.pagename {
-        a {
-            &:before {
-                font-size: 14px;
-                font-variant: normal;
-            }
-        }
-    }
-}
+@import 'components/header';
+@import 'components/logo';
+@import 'components/sidebar';
+@import 'components/user';
+
+@import 'global/shame.scss';

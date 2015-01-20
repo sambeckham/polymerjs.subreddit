@@ -2,8 +2,16 @@ default:
  - 'serve'
 
 serve:
- - 'clean'
+ - 'clean:server'
  - 'copy'
- - 'sass'
+ - 'sass:dev'
+ - 'autoprefixer:dev'
  - 'connect'
  - 'watch'
+
+build:
+ - 'clean:resources'
+ - 'sass:dist'
+ - 'imagemin'
+ - 'replace:imageReferences'
+ - 'autoprefixer:dist'

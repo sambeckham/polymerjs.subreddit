@@ -1,3 +1,4 @@
 module.exports = {
-    server: ['.tmp']
+    server: '.tmp',
+    resources: 'resources'
 };

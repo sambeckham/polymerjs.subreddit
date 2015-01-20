@@ -1,0 +1,16 @@
+.pagename.redditname a{
+    background-image: url('/images/logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    color: $color__gray--dark;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: $logo-width;
+    height: 0;
+    padding-top: $logo-height;
+    margin-left: - $logo-width / 2;
+    margin-top: - ($logo-height + $tab-bar-height) / 2;
+    text-align: center;
+}
