@@ -1,0 +1,18 @@
+#header-bottom-right {
+    background-color: $color__blue--dark;
+    color: $color__gray--light;
+    padding: $ratio--inv#{em} $ratio#{em};
+    margin: 0;
+    width: auto;
+    text-align: right;
+    white-space: nowrap;
+
+    span {
+        color: $color__gray--light;
+    }
+
+    a {
+        color: $color__gray--light;
+        text-decoration: underline;
+    }
+}
