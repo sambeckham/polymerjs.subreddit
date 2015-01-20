@@ -5,6 +5,7 @@ serve:
  - 'clean:server'
  - 'copy'
  - 'sass:dev'
+ - 'autoprefixer:dev'
  - 'connect'
  - 'watch'
 
@@ -13,3 +14,4 @@ build:
  - 'sass:dist'
  - 'imagemin'
  - 'replace:imageReferences'
+ - 'autoprefixer:dist'

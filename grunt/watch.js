@@ -2,13 +2,17 @@ module.exports = {
     options: {
         livereload: true
     },
-    pages: {
-        files: ['app/*.html'],
-        tasks: ['copy']
-    },
     css: {
         files: ['app/scss/{,*/}*.scss'],
         tasks: ['sass']
+    },
+    images: {
+        files: ['app/images/{,*/}*.{png,jpg}'],
+        tasks: ['copy:images']
+    },
+    pages: {
+        files: ['app/*.html'],
+        tasks: ['copy']
     },
     configFiles: {
         files: ['gruntfile.js', 'grunt/*.{js,yaml}'],
