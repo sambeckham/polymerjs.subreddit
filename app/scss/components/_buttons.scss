@@ -1,0 +1,19 @@
+.morelink{
+    background: $color__blue;
+    border: 0;
+
+    &:hover,
+    &:focus {
+        background: $color__blue--light;
+    }
+
+    a {
+        color: $color__white;
+        font-weight: 400;
+        letter-spacing: 0;
+    }
+
+    .nub {
+        display: none;
+    }
+}
