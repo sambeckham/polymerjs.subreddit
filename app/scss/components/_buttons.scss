@@ -1,0 +1,29 @@
+.morelink{
+    background: none;
+    border: 0;
+    height: auto;
+
+    &:hover,
+    &:focus {
+        background: none;
+    }
+
+    a {
+        background: $color__blue;
+        color: $color__white;
+        font-weight: 400;
+        letter-spacing: 0;
+        line-height: 1em;
+        padding: $ratio--inv#{em};
+        transition: background .4s;
+
+        &:hover,
+        &:focus {
+            background: $color__blue--light;
+        }
+    }
+
+    .nub {
+        display: none;
+    }
+}
